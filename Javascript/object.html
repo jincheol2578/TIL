@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var user = {
+            "man": "jincheol",
+            "woman": "minyeong"
+        };
+        document.write("man : " + user.man + "<br>");
+        document.write("woman : " + user.woman + "<br>");
+        user.dog = "cheonyee";
+        document.write("dog : " + user.dog + "<br>");
+        user["dog2"] = "poodong";
+        document.write("dog2 : " + user["dog2"] + "<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for (var key in user) { // key = 객체 
+            document.write(key + " : ", user[key] + "<br>");
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <!-- 객체에 포함된 변수는 Property, 함수는 Method 라고 한다. -->
+    <script>
+        user.showAll = function () {
+            for (var key in this) {
+
+                document.write(key + " : ", this[key] + "<br>");
+            }
+        }
+        user.showAll();
+    </script>
+</body>
+
+</html>

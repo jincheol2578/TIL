@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>LoopArrayExam</h1>
+    <input type="button" id="btn" value="night" onclick="btn_click();">
+    <input type="text" id="txtbox" value="">
+    <script>
+
+        function btn_click() {
+            var body = document.querySelector('body');
+            var btnVal = document.getElementById('btn');
+            var h1Val = document.querySelectorAll('h1');
+
+            if (btnVal.value === 'night') {
+                body.style.backgroundColor = 'black';
+                btnVal.value = 'day';
+
+                for (var i = 0; i < h1Val.length; i++) {
+                    h1Val[i].style.color = 'white';
+                }
+
+                document.getElementById('txtbox').value = '밤이되었습니다.';
+
+            } else if (btnVal.value === 'day') {
+                body.style.backgroundColor = 'white';
+                btnVal.value = 'night';
+
+                for (var i = 0; i < h1Val.length; i++) {
+                    h1Val[i].style.color = 'black';
+                }
+
+                document.getElementById('txtbox').value = '낮이되었습니다.';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
