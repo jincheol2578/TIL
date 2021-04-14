@@ -24,5 +24,12 @@ public class MyArrayList implements MyList {
 		return arr.length;
 	}
 
+	@Override
+	public void set(int i, int j) {
+		arr[i] = j;
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }
