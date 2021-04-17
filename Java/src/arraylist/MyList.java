@@ -1,4 +1,4 @@
-package ArrayList;
+package arraylist;
 
 public interface MyList {
 	void add(int j);

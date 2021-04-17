@@ -1,4 +1,4 @@
-package ArrayList;
+package arraylist;
 
 public class MyArrayList implements MyList {
 
