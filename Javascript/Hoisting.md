@@ -21,3 +21,4 @@ console.log(c);
 var  d;
 ```
 *console.log(d); 는 콘솔창에 undefind가 출력된다.*
+.
