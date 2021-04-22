@@ -17,7 +17,7 @@
 
 #### 2. 코드
 
-```java
+```jsp
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     
 //ex
@@ -30,11 +30,11 @@
 
 ####  Choose
 
-```java
+```jsp
 <c:set var="n" scope="request" type="number" value="83"/>
 ```
 
-```java
+```jsp
 <c:choose>
 	<c:when test="${score >= 90 }">
 		A 학점 입니다.   //test의 조건이 true일때 실행
@@ -56,7 +56,7 @@
 
 ####  ForEach
 
-```java
+```jsp
 <%
 	List<String> list = new ArrayList<>(); //list 생성
 	list.add("hello");
@@ -66,7 +66,7 @@
 	request.setAttribute("list", list);	
 %>
 ```
-```java
+```jsp
 <c:forEach items="${list }" var="item" begin="0">
 	${item } <br>
 </c:forEach>
@@ -82,11 +82,11 @@
 
 #### Import
 
-```java
+```jsp
 <c:import url="http://www.google.com" var="urlValue" scope="request"/>
 ```
 
-```java
+```jsp
 ${urlValue }
 ```
 
@@ -98,7 +98,7 @@ ${urlValue }
 
 #### Redirect
 
-```java
+```jsp
 <c:redirect url="http://localhost:8080/WebExam/jstl05.jsp">
 	<c:param name="name" value="value"/>
 </c:redirect>

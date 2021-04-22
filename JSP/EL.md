@@ -14,7 +14,7 @@
 
 ## 문법 예제
 
-```java
+```jsp
 pageContext.getAttribute("p1") : <%=pageContext.getAttribute("p1") %>
 pageContext.getAttribute("p1") : ${pageScope.p1}
 ```
