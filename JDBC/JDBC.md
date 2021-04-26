@@ -209,5 +209,3 @@ if(rs.next()) {
 				int c2 = rs.getInt("column2"); // column2를 c2에 저장
 				role = new Role(id, description);
 ```
-
->>>>>>> a90fb5a79429e12c276569b440f0c3758606ca96
