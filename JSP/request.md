@@ -3,6 +3,8 @@
 #### 클라이언트에서 값이 넘어올떄
 
 - `request.getParameter(키값);`
+- getParmeter는 리턴값이 항상 String 이다.
+- test
 
 
 
