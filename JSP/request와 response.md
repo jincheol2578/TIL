@@ -1,6 +1,8 @@
-# request
+# request와 response
 
-#### request
+## request
+
+- request 기본객체는 웹 브라우저가 전송한 요청정보를 담고있다
 
 - Map방식이다.  `key=value`
 
@@ -19,3 +21,16 @@
 
 - `request.getAttribute("key", value);`
 
+#### 페이지 이동방식 
+
+- `forward` 로 이동
+
+## response
+
+- response 기본객체는 웹브라우저에 보내는 응답정보를 담는다.
+
+
+
+#### 페이지 이동방식
+
+- `sendredirect`, `forward` 로 이동
