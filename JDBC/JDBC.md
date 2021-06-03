@@ -102,4 +102,7 @@ if(rs.next()) {
 				int c2 = rs.getInt("column2"); // column2를 c2에 저장
 				role = new Role(id, description);
 ```
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
